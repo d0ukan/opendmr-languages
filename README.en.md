@@ -20,6 +20,10 @@ Write `cjk.bin` even for an English interface: Han characters in channel and con
 | `languages/zh.json` | 中文 (Chinese) | va3bpf |
 | `languages/es.json` | Español (Spanish) | looking for a maintainer |
 | `languages/cjk.bin` | The Chinese font (GB2312, made from Noto Sans SC, SIL OFL 1.1, see `languages/OFL-NotoSansSC.txt`) | va3bpf |
+| `docs/installation.es.md`, `docs/manual.es.md` | The installation guide and user manual in Spanish | looking for a maintainer |
+
+Translated documents may lag behind; the English ones in OpenDMR ([installation](https://github.com/va3bpf/OpenDMR/blob/main/docs/installation.en.md),
+[manual](https://github.com/va3bpf/OpenDMR/blob/main/docs/manual.en.md)) are the reference. The screenshots are in OpenDMR's `docs/manual/`.
 
 ## Adding a language
 
@@ -35,6 +39,8 @@ Letters: the firmware's own fonts have ASCII, Latin-1 and Latin Extended-A (U+01
 Turkish, Polish, Czech, Romanian, Hungarian ... need only the `.json`, without `font`. Other scripts (Korean,
 Japanese ...) need a font file, made with OpenDMR's `tools/fonts/mkfont_pack.py`; the format is in OpenDMR's
 [docs/i18n.en.md](https://github.com/va3bpf/OpenDMR/blob/develop/docs/i18n.en.md).
+
+Licence: the translations as OpenDMR's, the Chinese font under the SIL OFL 1.1; see [LICENSE](LICENSE).
 
 When OpenDMR adds or changes interface text, `en.json` changes with it; `check_lang.py` lists what a translation is
 missing.

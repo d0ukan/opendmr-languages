@@ -19,6 +19,10 @@
 | `languages/zh.json` | 中文 | va3bpf |
 | `languages/es.json` | Español（西班牙文） | 欢迎接手 |
 | `languages/cjk.bin` | 中文字库（GB2312，由思源黑体 Noto Sans SC 生成，SIL OFL 1.1，见 `languages/OFL-NotoSansSC.txt`） | va3bpf |
+| `docs/installation.es.md`、`docs/manual.es.md` | 西班牙文的安装指南和使用手册 | 欢迎接手 |
+
+文档的译文可能落后于英文版，以 OpenDMR 里的英文版（[安装](https://github.com/va3bpf/OpenDMR/blob/main/docs/installation.en.md)、
+[手册](https://github.com/va3bpf/OpenDMR/blob/main/docs/manual.en.md)）为准；截图在 OpenDMR 的 `docs/manual/` 里。
 
 ## 贡献一种语言
 
@@ -31,5 +35,7 @@
 字母范围：固件自带的字体有 ASCII、Latin-1 和拉丁扩展 A（U+0100–U+017F），西欧、土耳其、波兰、捷克、罗马尼亚、匈牙利等
 语言只要 `.json`，不写 `font`。其他文字（韩文、日文……）需要字库文件，用 OpenDMR 的 `tools/fonts/mkfont_pack.py` 生成，
 格式见 OpenDMR 的 [docs/i18n.md](https://github.com/va3bpf/OpenDMR/blob/develop/docs/i18n.md)。
+
+许可：译文和 OpenDMR 相同，中文字库按 SIL OFL 1.1，见 [LICENSE](LICENSE)。
 
 OpenDMR 增加或修改界面文字时，`en.json` 会跟着变；`check_lang.py` 会列出译文里缺少的条目，欢迎补上。
